@@ -18,8 +18,3 @@
 | `Normalization` | X' = (X-Xmin) / (Xmax-Xmin) | `[0 or 1]` | <br>
 | `Standardization` | X' = (X - η) / σ | `[-3; +3]`
 
-<picture>
- <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
- <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
- <img alt="YOUR-ALT-TEXT" src="YOUR-DEFAULT-IMAGE">
-</picture>
