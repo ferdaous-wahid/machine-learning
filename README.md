@@ -13,7 +13,7 @@
 
 **Feature Scaling is always applied to columns** <br>
 
-###Types of feature scaling### <br>
+###Types of feature scaling <br>
 
 | `Normalization` | X' = (X-Xmin) / (Xmax-Xmin) | `[0 or 1]` | <br>
 | `Standardization` | X' = (X - η) / σ | `[-3; +3]`
