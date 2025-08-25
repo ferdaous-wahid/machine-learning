@@ -11,7 +11,7 @@
   * Calculate performance metrics
   * Make a verdict
 
-**Feature Scaling is always applied to columns** 
-###Types of feature scaling###
+**Feature Scaling is always applied to columns** <br>
+###Types of feature scaling### <br>
 | Normalization | Standard
 
