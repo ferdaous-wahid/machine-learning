@@ -80,5 +80,5 @@
 ```
 	from sklearn.preprocessing import LabelEncoder
 	le = LabelEncoder()
-	Y = le.fit_transform(Y) //making purchase column into binary
+	Y = le.fit_transform(Y) #making purchase column into binary
 ```
