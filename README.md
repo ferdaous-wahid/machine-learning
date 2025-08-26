@@ -82,3 +82,28 @@
 	le = LabelEncoder()
 	Y = le.fit_transform(Y) #making purchase column into binary
 ```
+
+# Split the dataset into training set and test set
+
+```
+	from sklearn.model_selection import train_test_split
+	X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=1)
+```
+
+# Feature Scaling
+
+### Two types of Feature Scaling
+
+| Standardisation | `Xstand= (X-mean(X)) / standard deviation (X)` |
+| Normalisatioin | `Xnorm = (X-min(X)) / max(X) - min(X)`|
+
+```
+	from sklearn.preprocessing import StandardScaler
+	sc = StandardScaler()
+	X_train[:, 3:] = sc.fit_transform(X_train[:, 3:])
+	X_test[:, 3:] = sc.transform(X_test[:, 3:])
+	print(X_train)
+	print(X_test)
+	print(Y_train)
+	print(Y_test)
+```
