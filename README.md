@@ -34,7 +34,7 @@
  	import pandas as pd
 ```
 
-** Importing the dataset**
+**Importing the dataset**
 
 ```
 	dataset = pd.read_csv('Data.csv')
@@ -104,6 +104,44 @@
 	X_test[:, 3:] = sc.transform(X_test[:, 3:])
 	print(X_train)
 	print(X_test)
-	print(Y_train)
-	print(Y_test)
+```
+
+## Visualizing the Test set result
+
+```
+	plt.scatter(X_train, y_train, color = "red")
+	plt.plot(X_train, regressor.predict(X_train), color = "blue")
+	plt.title("Salary vs Experience (Training set)")
+	plt.xlabel("Years of Experience")
+	plt.ylabel("Salary")
+	plt.show()
+```
+
+## Predict the test set result
+
+```
+y_pred = regressor.predict(X_test)
+
+```
+
+## Visualizing the Training set result
+
+```
+	plt.scatter(X_train, y_train, color = "red")
+	plt.plot(X_train, regressor.predict(X_train), color = "blue")
+	plt.title("Salary vs Experience (Training set)")
+	plt.xlabel("Years of Experience")
+	plt.ylabel("Salary")
+	plt.show()
+```
+
+## Visualizing the Test set result
+
+```
+	plt.scatter(X_test, y_test, color = "red")
+	plt.plot(X_train, regressor.predict(X_train), color = "blue")
+	plt.title("Salary vs Experience (Training set)")
+	plt.xlabel("Years of Experience")
+	plt.ylabel("Salary")
+	plt.show()
 ```
